@@ -68,7 +68,7 @@ def winner(board)
     index = win_combo[0]
     if board[index] == "X"
       return "X"
-    elsif board[_index] == "O"
+    elsif board[index] == "O"
       return "O"
     end
   end
