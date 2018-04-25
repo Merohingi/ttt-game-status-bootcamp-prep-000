@@ -22,16 +22,16 @@ def won?(board)
     win_index_2 = win_combo[1]
     win_index_3 = win_combo[2]
 
-    if board[win_index1] == "X" && board[win_index2] == "X" && board[win_index3] == "X"
+    if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
       return win_combo
-    elsif board[win_index1] == "O" && board[win_index2] == "O" && board[win_index3] == "O"
+    elsif board[win_index_1] == "O" && board[win_index_2] == "O" && board[win_index_3] == "O"
       return win_combo
     end
   end
   
-  if board.none? {|position| position == " " || position == "" || position == nil}
+  if board.none? {|index| index == " " || index == "" || index == nil}
     return false
-  elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || board == ["","","","","","","","",""]
+  elsif board == Array.new(9,"") || Array.new(9," ")
     return false
   else
     return false
