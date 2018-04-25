@@ -58,6 +58,8 @@ def over?(board)
   elsif full?(board) == true
     return true
   end
+else 
+  return nil
 end
 
 def winner(board)
