@@ -65,10 +65,10 @@ end
 def winner(board)
   if won?(board)
     win_combo = won?(board)
-    sample_index = win_combo[0]
-    if board[sample_index] == "X"
+    index = win_combo[0]
+    if board[index] == "X"
       return "X"
-    elsif board[sample_index] == "O"
+    elsif board[_index] == "O"
       return "O"
     end
   end
