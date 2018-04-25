@@ -29,7 +29,7 @@ def won?(board)
     end
   end
   
-  if board.none? {|position| position == " " || position == "" || position == nil})
+  if board.none? {|position| position == " " || position == "" || position == nil}
     return false
   elsif board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || board == ["","","","","","","","",""]
     return false
